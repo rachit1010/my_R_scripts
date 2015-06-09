@@ -3,7 +3,7 @@ positive<-c("party","chillin","congrats","great","cool","sunshine","passion","re
 negative<-c("nostagia","wtf","sad","poor","bad","accident","worst","worse","fraud","chaos","strikes","fuck","dead","death","costly","broken","kill","delay","cancel","sorry","crash","attack")
 
 tweets<-read.csv("file_name",header=F)
-tweets<-as.data.frame(tweets[1:4000,])
+tweets<-as.data.frame(tweets[start_row:end:row,])
 tweets<-mutate(tweets,sentiment="e")
 colnames(tweets)<-c("sentence","sentiment")
 
