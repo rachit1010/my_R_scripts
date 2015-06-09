@@ -2,7 +2,7 @@
 positive<-c("party","chillin","congrats","great","cool","sunshine","passion","relax","launch","enjoying","fantastic","success","cute","thank","Gorgeous","beautiful","inspire","cheaper","cheapest","cheap travel","cheap flight","check this out","cheap airfare","best","good","attraction","beauty","love","photogenic","luxury","low fare","low prices","celebrate","happy")
 negative<-c("nostagia","wtf","sad","poor","bad","accident","worst","worse","fraud","chaos","strikes","fuck","dead","death","costly","broken","kill","delay","cancel","sorry","crash","attack")
 
-tweets<-read.csv("Hospitality_Tweets_set2.csv",header=F)
+tweets<-read.csv("file_name",header=F)
 tweets<-as.data.frame(tweets[1:4000,])
 tweets<-mutate(tweets,sentiment="e")
 colnames(tweets)<-c("sentence","sentiment")
