@@ -64,4 +64,4 @@ for(i in 1:length(reqRows$RowNum))
 }
 
 #Writing result to a file.
-write.csv(x=tweets,file = "result_2_0001_4000.csv",row.names = F)
+write.csv(x=tweets,file = "result.csv",row.names = F)
